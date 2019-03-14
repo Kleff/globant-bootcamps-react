@@ -1,0 +1,24 @@
+.vehicleActions {
+    text-align: center;
+    color: #0b434c;
+} 
+
+button {
+    margin: 5px 10px 5px 10px;
+    padding: 8px 20px;
+    background-color: #0b434c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #083036;
+}
+
+span {
+    color: #0091b8;
+    font-weight: 600;
+}
+

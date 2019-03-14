@@ -1,0 +1,19 @@
+
+.vehicleInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #0b434c;
+}
+
+.vehicleInfo span {
+    color: #0091b8;
+}
+
+.vehicleInfo .price {
+    color: #00b1ff;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
