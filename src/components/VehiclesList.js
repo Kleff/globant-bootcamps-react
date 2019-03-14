@@ -1,18 +1,20 @@
 import React, { Component, Fragment } from 'react';
-import Vehicle from './components/Vehicle';
-import Header from './components/Header';
-import './App.css';
+import Vehicle from './Vehicle';
+import Header from './Header';
 
-import onix from './img/onix.jpg';
-import ka from './img/ka.jpg';
-import p208 from './img/p208.jpg';
+import '../styles/VehiclesList.css';
 
-class App extends Component {
+import onix from '../img/onix.jpg';
+import ka from '../img/ka.jpg';
+import p208 from '../img/p208.jpg';
+
+class VehiclesList extends Component {
   constructor() {
     super();
     this.state = {
       vehicles: [
         {
+          id: 1,
           count: 0,
           info: {
             img: onix,
@@ -25,6 +27,7 @@ class App extends Component {
           }
         },
         {
+          id: 2,
           count: 0,
           info: {
             img: ka,
@@ -37,6 +40,7 @@ class App extends Component {
           }
         },
         {
+          id: 3,
           count: 0,
           info: {
             img: p208,
@@ -54,12 +58,12 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="vehiclesList">
         <Header />
         <Fragment>
           {this.state.vehicles.map(vehicle =>
             <Vehicle
-              key={vehicle.make + vehicle.model}
+              key={vehicle.id}
               vehicle={vehicle}
             />)}
         </Fragment>
@@ -68,4 +72,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default VehiclesList;
