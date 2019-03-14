@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import Vehicle from './components/Vehicle';
 import Header from './components/Header';
 import './App.css';
@@ -52,19 +52,17 @@ class App extends Component {
     }
   }
 
-
-
   render() {
     return (
       <div className="App">
         <Header />
-        <div>
+        <Fragment>
           {this.state.vehicles.map(vehicle =>
             <Vehicle
               key={vehicle.make + vehicle.model}
               vehicle={vehicle}
             />)}
-        </div>
+        </Fragment>
       </div>
     );
   }
