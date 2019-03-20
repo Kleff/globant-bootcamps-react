@@ -1,12 +1,12 @@
-import React, { Component, Fragment } from 'react';
-import Vehicle from './Vehicle';
-import Header from './Header';
+import React, { Component } from 'react';
+import Vehicle from '../Vehicle';
+import Header from '../Header';
 
-import '../styles/VehiclesList.css';
+import '../../styles/ViewVehiclesList.css';
 
-import onix from '../img/onix.jpg';
-import ka from '../img/ka.jpg';
-import p208 from '../img/p208.jpg';
+import onix from '../../img/onix.jpg';
+import ka from '../../img/ka.jpg';
+import p208 from '../../img/p208.jpg';
 
 class VehiclesList extends Component {
   constructor() {
@@ -15,19 +15,6 @@ class VehiclesList extends Component {
       vehicles: [
         {
           id: 1,
-          count: 0,
-          info: {
-            img: onix,
-            make: "Chrevrolet",
-            model: "Onix",
-            version: "LTZ",
-            price: "$697.900",
-            country: "Brasil",
-            warranty: "3 años o 100.000 km"
-          }
-        },
-        {
-          id: 2,
           count: 0,
           info: {
             img: ka,
@@ -51,6 +38,19 @@ class VehiclesList extends Component {
             country: "Brasil",
             warranty: "3 años o 100.000 km"
           }
+        },
+        {
+          id: 2,
+          count: 0,
+          info: {
+            img: onix,
+            make: "Chrevrolet",
+            model: "Onix",
+            version: "LTZ",
+            price: "$697.900",
+            country: "Brasil",
+            warranty: "3 años o 100.000 km"
+          }
         }
       ]
     }
@@ -60,13 +60,13 @@ class VehiclesList extends Component {
     return (
       <div className="vehiclesList">
         <Header />
-        <Fragment>
+        <div className="contentList">
           {this.state.vehicles.map(vehicle =>
             <Vehicle
               key={vehicle.id}
               vehicle={vehicle}
             />)}
-        </Fragment>
+        </div>
       </div>
     );
   }

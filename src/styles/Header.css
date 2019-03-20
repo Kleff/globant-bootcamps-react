@@ -1,28 +1,42 @@
 @font-face {
-    font-family: 'Heavyheap';
-    src:  url('../fonts/heavyheap-webfont.woff2') format('woff2'),
-          url('../fonts/heavyheap-webfont.woff') format('woff');
+    font-family: 'NightWraithSemital';
+    src:  url('../fonts/nightwraithsemital.woff2') format('woff2'),
+          url('../fonts/nightwraithsemital.woff') format('woff');
   }
 
+.container-style {
+    background-color: red;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .header {
-    background-color: #0a3453;
+    max-width: 1000px;
+    margin: 0 auto;
     color: white;
     text-align: center;
+    color: #716d6e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header h1 span {
+    color: #ffbf00;
 }
 
 .header h1 a {
+    color: #716d6e;
     display: inline-block;
-    color: white;
     text-decoration: none;
-    font-family: Heavyheap, Arial, sans-serif;
+    font-family: NightWraithSemital, Arial, sans-serif;
     font-size: 40px;
-    margin: 0;
-    padding: 20px 0 10px 0;
+    margin: 40px 0;
     letter-spacing: 1px;
 }
 
 .header p {
-    font-size: 14px;
+    margin: 0;
+    font-size: 16px;
     font-weight: bold;
-    padding-bottom: 20px;
 }
