@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import '../styles/VehicleInfo.css';
 
@@ -16,6 +17,16 @@ const VehicleInfo = (props) => {
         </div>
     );
 };
+
+VehicleInfo.propTypes = {
+    img: PropTypes.string,
+    make: PropTypes.string,
+    model: PropTypes.string,
+    version: PropTypes.string,
+    price: PropTypes.string,
+    country: PropTypes.string,
+    warranty: PropTypes.string,
+}
 
 export default VehicleInfo;
 

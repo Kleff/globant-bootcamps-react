@@ -7,7 +7,7 @@ import '../styles/Vehicle.css';
 
 class Vehicle extends Component {
   constructor(props) {
-    super();
+    super(props);
     this.state = {
       count: props.vehicle.count
     }

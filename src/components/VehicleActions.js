@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import '../styles/VehicleActions.css';
 
@@ -12,5 +13,11 @@ const VehicleActions = (props) => {
         </div>
     );
 };
+
+VehicleActions.propTypes = {
+    handleIncrement: PropTypes.func.isRequired,
+    handleDecrement: PropTypes.func.isRequired,
+    count: PropTypes.number.isRequired,
+}
 
 export default VehicleActions;

@@ -85,3 +85,9 @@ a:hover {
 .containerForm .custom-radio label {
     cursor: pointer;
 }
+
+.errorMessage {
+    color: red;
+    margin-left: 43%;
+    font-size: 13px;
+}
