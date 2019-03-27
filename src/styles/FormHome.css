@@ -1,0 +1,93 @@
+
+
+.containerForm {
+    background-color: #fff;
+    width: 375px;
+    color: #424242;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.52);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.52);
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.52);
+}
+
+.containerForm h1 {
+    font-weight: 600;
+    text-align: center;
+    margin: 30px 0 10px 0;
+}
+
+.containerForm p {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.containerForm label {
+    display: inline-block;
+    width: 30%;
+    margin: 15px 20px 15px 30px;
+    text-align: end;
+}
+
+.containerForm input {
+    width: 50%;
+    padding: 8px 5px;
+}
+
+.containerForm input[type="radio"]{
+    width: 0px;
+    margin: 0 5px 0 0;
+}
+
+.containerForm input[type="radio"]:last-child {
+    width: 0px;
+    margin: 0 5px 0 15px;
+}
+
+.containerForm input[type="submit"] {
+    width: auto;
+    display: block;
+    margin: 20px auto;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: #ffbf00;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.containerForm input[type="submit"]:hover {
+    background-color: #ffa600;
+}
+
+.containerForm input {
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.custom-control {
+    padding-left: 0;
+}
+
+.custom-control-inline {
+    margin-right: 0;
+}
+
+.containerForm .custom-radio input,
+.containerForm .custom-radio label {
+    cursor: pointer;
+}
+
+.errorMessage {
+    color: red;
+    margin-left: 43%;
+    font-size: 13px;
+}

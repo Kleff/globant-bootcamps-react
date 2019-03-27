@@ -1,17 +1,17 @@
 
-.carInfo {
+.vehicleInfo {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #0b434c;
+    color: #333;
 }
 
-.carInfo span {
-    color: #0091b8;
+.vehicleInfo span {
+    color: #ffcb33;
 }
 
-.carInfo .precio {
-    color: #00b1ff;
+.vehicleInfo .price {
+    color: #222;
     font-size: 20px;
     font-weight: 600;
     margin: 10px 0;

@@ -1,0 +1,18 @@
+.contentHome h2 {
+    color: #fff;
+    font-weight: 900;
+    font-size: 45px;
+    text-transform: uppercase;
+}
+
+.contentHome p {
+    text-align: center;
+    font-size: 18px;
+    color: #444;
+}
+
+.contentHome img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto; 
+}
