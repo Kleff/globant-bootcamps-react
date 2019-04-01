@@ -10,8 +10,6 @@ const Vehicle = (props) => {
     <div className="vehicleItem">
       <VehicleInfo info={props.vehicle.info} />
       <VehicleActions
-        handleIncrement={props.handleIncrement}
-        handleDecrement={props.handleDecrement}
         count={props.vehicle.count} 
         id={props.vehicle.id}
         />

@@ -3,22 +3,11 @@ import Vehicle from '../components/Vehicle';
 import Header from '../components/Header';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { incrementCount } from '../actions'
 
 import '../styles/VehiclesListContainer.css';
 
 
 class VehiclesList extends Component {
-
-  handleIncrement = count => {
-
-    this.props.dispatch(incrementCount(count))
-
-  }
-
-  handleDecrement = () => {
-
-  }
 
   render() {
     return (
@@ -29,8 +18,6 @@ class VehiclesList extends Component {
             <Vehicle
               key={vehicle.id}
               vehicle={vehicle}
-              handleIncrement={this.handleIncrement}
-              handleDecrement={this.handleDecrement}
             />)}
         </div>
       </div>
@@ -48,10 +35,6 @@ const mapStateToProps = state => {
   }
 }
 
-const mapDispatchToProps = dispatch => (
-  {
-    incrementCount: count => dispatch(incrementCount(count))
-  }
-)
 
-export default connect(mapStateToProps, mapDispatchToProps )(VehiclesList);
+
+export default connect(mapStateToProps, null )(VehiclesList);
